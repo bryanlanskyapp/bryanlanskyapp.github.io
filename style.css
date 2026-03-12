@@ -89,6 +89,16 @@ footer {
   position: absolute;
   top: 0;
 }
+
+* {
+  -webkit-tap-highlight-color: transparent; /* Hapus warna biru saat tombol di-klik */
+  -webkit-touch-callout: none;              /* Matikan menu klik kanan/tahan di gambar */
+  user-select: none;                        /* Cegah user copy-paste teks agar terasa seperti app */
+}
+
+input, textarea {
+  user-select: text;                        /* Biarkan teks tetap bisa diisi di kolom input */
+}
 /* Tampilan Mobile Portrait */
 @media (max-width: 832px) {
     nav {
@@ -148,6 +158,7 @@ footer {
 .card { background: #333; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; transition: 0.3s; }
 .card:hover { border: 1px solid var(--accent); transform: scale(1.05); }
 .card img { width: 100%; border-radius: 5px; }
+
 
 
 
