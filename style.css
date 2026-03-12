@@ -10,27 +10,64 @@ body {
   color: var(--text);
 }
 
+/* Layout Utama Navbar */
 nav { 
   background: linear-gradient(to bottom, #000000eb, #2a2a2a00); 
-  padding: 0 25px; 
+  padding: 10px 25px; 
   display: flex; 
-  justify-content: space-between; 
+  align-items: center; /* Menjaga logo & menu sejajar vertikal di tengah */
+  justify-content: flex-start; /* Mengikuti gaya gambar yang rapat ke kiri */
   position: sticky; 
   top: 0; 
-  left: 0;
-  right: 0;
   z-index: 999;
-  transition: 300ms;
-  -o-transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
+  height: 60px; /* Memberikan ruang yang cukup */
 }
 
-nav a { 
+/* Ukuran Logo agar tidak kekecilan */
+.nav-logo {
+  height: 40px; /* Sesuaikan angka ini sampai pas dengan mata kamu */
+  display: block;
+}
+
+/* Membuat Menu jadi Horizontal */
+.nav-links {
+  list-style: none;
+  display: flex; /* INI KUNCINYA agar horizontal */
+  margin: 0;
+  padding: 0;
+  margin-left: 40px; /* Jarak antara logo dan menu pertama */
+}
+
+.nav-links li {
+  margin-right: 25px; /* Jarak antar menu */
+}
+
+.nav-links li a { 
   color: white; 
   text-decoration: none; 
-  font-weight: bold; 
-  margin-left: 15px;
+  font-weight: 600; 
+  font-size: 14px;
+  text-transform: uppercase; /* Huruf besar seperti di gambar */
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00e5ff; /* Warna highlight saat kursor nempel */
+}
+
+/* Style Tombol Download Apps di sisi kanan */
+.nav-right {
+  margin-left: auto; /* Mendorong tombol ke ujung kanan */
+}
+
+.btn-download {
+  border: 2px solid #00e5ff;
+  color: #00e5ff !important;
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .container { padding: 20px; max-width: 1200px; margin: auto; }
@@ -38,4 +75,5 @@ nav a {
 .card { background: #333; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; transition: 0.3s; }
 .card:hover { border: 1px solid var(--accent); transform: scale(1.05); }
 .card img { width: 100%; border-radius: 5px; }
+
 
