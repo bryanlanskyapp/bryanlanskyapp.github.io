@@ -67,6 +67,10 @@ nav.scrolled {
 }
 
 .btn-download {
+  transition: 300ms;
+  -o-transition: 300ms;
+  -moz-transition: 300ms;
+  -webkit-transition: 300ms;
   border: 2px solid #00e5ff;
   color: #00e5ff !important;
   padding: 10px;
@@ -175,4 +179,5 @@ input, textarea {
 .card { background: #333; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; transition: 0.3s; }
 .card:hover { border: 1px solid var(--accent); transform: scale(1.05); }
 .card img { width: 100%; border-radius: 5px; }
+
 
