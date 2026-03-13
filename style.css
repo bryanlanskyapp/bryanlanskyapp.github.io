@@ -89,7 +89,6 @@ nav.scrolled {
     transform: translateY(15px); /* Mulai dari 15px lebih rendah */
     transition: all 0.3s ease-in-out; /* Durasi 0.3 detik yang smooth */
 }
-}
 
 /* Tampilkan saat di-hover (Desktop) */
 .nav-item.dropdown:hover .dropdown-menu {
@@ -315,6 +314,7 @@ input, textarea {
 .card { padding: 1px; border-radius: 8px; font-size: 1.2rem; text-align: center; cursor: pointer; transition: 0.3s; }
 .card:hover { border: 1px solid var(--accent); transform: scale(1.05); }
 .card img { width: 100%; border-radius: 5px; }
+
 
 
 
