@@ -97,6 +97,11 @@ nav.scrolled {
     transform: translateY(0);
 }
 
+.nav-item.dropdown:active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
 /* Styling Item di dalam Submenu */
 .dropdown-menu li {
     border-bottom: 1px solid #222; /* Garis pemisah tipis */
@@ -155,6 +160,17 @@ footer {
     display: none;
 }
 
+@keyframes cardHoverEffect {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 229, 255, 0);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3);
+        border-color: #00e5ff; /* Warna aksen MoonlightBay */
+    }
+}
 /* Container Utama untuk Semua Halaman Status */
 .status-container {
     flex-grow: 1;
